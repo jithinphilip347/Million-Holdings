@@ -20,40 +20,42 @@ export default function Preloader() {
 
       const letters = textRef.current.children;
 
-      gsap.set(letters, { opacity: 0, color: "#9ca3af" }); 
 
-      const stepDuration = 1.0; 
-      const staggerAmount = 0.2; 
+
+      gsap.set(letters, { opacity: 0, color: "#4b5563" }); 
 
       tl
+        // 1. Smooth Fade In
         .to(letters, {
           opacity: 1,
-          duration: stepDuration,
-          stagger: staggerAmount,
-          ease: "power3.out",
-        }, "start")
-        
+          duration: 0.8,
+          stagger: 0.05,
+          ease: "power2.out",
+        })
+        // 2. Color Change (Gray -> White) - Overlapping slightly for smoothness
         .to(letters, {
           color: "#ffffff",
-          duration: stepDuration,
-          stagger: staggerAmount,
-          ease: "power3.out",
-        }, `start+=${staggerAmount}`) 
-
-        .to({}, { duration: 0.5 })
+          duration: 1,
+          stagger: 0.05,
+          ease: "power2.inOut",
+        }, "-=0.4") // Start while fading in
+        
+        .to({}, { duration: 0.2 }) // Brief hold
 
         .add("exit") 
+        // 3. Exit Animation (Letter Spacing + Fade)
         .to(textRef.current, {
-           letterSpacing: "1em", 
-           duration: 1.5,
-           ease: "power2.inOut"
+           letterSpacing: "0.5em", // Slightly less aggressive expansion
+           opacity: 0,
+           duration: 1.2,
+           ease: "power3.inOut"
         }, "exit")
         .to(containerRef.current, {
           opacity: 0,
-          scale: 1.1, 
-          duration: 1.5,
-          ease: "power2.inOut",
-        }, "exit");
+          duration: 1,
+          ease: "power2.inOut", 
+          onComplete: () => gsap.set(containerRef.current, { display: "none" })
+        }, "exit+=0.2");
 
     }, containerRef);
 
@@ -73,7 +75,7 @@ export default function Preloader() {
       className="fixed inset-0 bg-black flex items-center justify-center"
       style={{ zIndex: 9999 }}
     >
-      <h1 ref={textRef} className="text-4xl md:text-6xl font-bold flex overflow-hidden tracking-[0.2em] uppercase text-center">
+      <h1 ref={textRef} className="text-xl sm:text-3xl md:text-5xl lg:text-7xl font-bold flex overflow-hidden tracking-[0.15em] uppercase text-center text-gray-400">
         {text.split("").map((char, index) => (
           <span key={index} className="inline-block">
             {char === " " ? "\u00A0" : char}

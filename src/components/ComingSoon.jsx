@@ -103,7 +103,7 @@ export default function ComingSoon() {
           <a href="#" className="text-sm uppercase tracking-[0.15em] hover:text-[#f01c27] transition-colors duration-300 font-medium w-24 text-center">Home</a>
           
           <div className="flex-grow flex justify-center">
-             <img src="/logo.png" alt="Million Holdings Logo" className="h-20 md:h-28 w-auto object-contain grayscale brightness-0 invert" />
+             <img src="/logo-white.png" alt="Million Holdings Logo" className="h-20 md:h-28 w-auto object-contain" />
           </div>
 
           <a href="#" className="text-sm uppercase tracking-[0.15em] hover:text-[#f01c27] transition-colors duration-300 font-medium w-24 text-center">Contact</a>
@@ -120,7 +120,7 @@ export default function ComingSoon() {
           <div className="hero-line w-24 h-[1px] bg-[#f01c27] mb-10"></div>
 
           <p className="animate-text text-gray-300 text-sm md:text-lg tracking-wider max-w-xl mx-auto font-light leading-relaxed" style={{ fontFamily: "Avenir, 'Nunito', sans-serif" }}>
-            We are curating a new digital experience for our clients. <br className="hidden md:block"/> Expect innovation, strategy, and precision.
+            Million holdings with million opportunities<br className="hidden md:block"/> 
           </p>
       
           <button className="animate-text mt-12 px-10 py-4 border border-[#f01c27]/30 text-[#f01c27] hover:bg-[#f01c27] hover:text-white transition-all duration-500 uppercase tracking-[0.2em] text-xs md:text-sm font-medium">
@@ -131,12 +131,21 @@ export default function ComingSoon() {
 
       {/* Expertise / Details Section */}
       <section className="features-section relative z-10 w-full py-20 bg-black/50 backdrop-blur-sm border-t border-white/5">
-         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-            {['Global Strategy', 'Digital Innovation', 'Sustainable Growth'].map((item, i) => (
-              <div key={i} className="feature-item p-6 border border-white/5 hover:border-[#f01c27]/30 transition-colors duration-300">
-                <h3 className="text-xl text-[#f01c27] mb-4 font-serif">{item}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed font-light">
-                  Delivering bespoke solutions efficiently to elevate your business presence in the modern era.
+         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 text-center max-w-4xl">
+            {[
+              {
+                title: "Vision",
+                desc: "To be the provider of choice for our client's recruitment solutions. Our executive recruitment and executive search consultants operate with the highest levels of professionalism, integrity and ethics. We strive to always exceed our client's Expectations by adding real value to their business."
+              },
+              {
+                title: "Mission",
+                desc: "To provide professional & efficient recruitment solution to meet each client's needs & requirements. To provide a bridge for individuals to career opportunities to achieve their career goal."
+              }
+            ].map((item, i) => (
+              <div key={i} className="feature-item p-8 border border-white/5 hover:border-[#f01c27]/30 transition-colors duration-300 bg-white/5 rounded-sm">
+                <h3 className="text-2xl text-[#f01c27] mb-4 font-serif">{item.title}</h3>
+                <p className="text-gray-300 text-sm leading-relaxed font-light tracking-wide">
+                  {item.desc}
                 </p>
               </div>
             ))}

@@ -86,12 +86,12 @@ export default function Header() {
       <header
         ref={headerRef}
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-          isScrolled ? "bg-black/80 backdrop-blur-md py-3 md:py-4 border-b border-white/10" : "bg-transparent py-4"
+          isScrolled ? "bg-black/80 backdrop-blur-md py-3 md:py-4" : "bg-transparent py-4"
         }`}
       >
         <div className="w-full px-4 md:px-12 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-             <img src="/logo-white.png" alt="Million Holding" className="h-10 md:h-16 w-auto object-contain" />
+             <img src="/logo-white.png" alt="Million Holding" className="h-12 md:h-20 w-auto object-contain" />
           </Link>
 
           {/* Desktop Nav - Hidden as per new request for side nav only or kept? 

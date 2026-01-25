@@ -19,11 +19,11 @@ export default function HomeAbout() {
         { clipPath: "polygon(0 0, 0% 100%, 0% 100%, 0 0)" }, 
         { 
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", 
-          duration: 1.5, 
+          duration: 1.2, 
           ease: "power4.inOut",
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 75%",
+            start: "top 85%",
             end: "bottom center",
             toggleActions: "play none none reverse"
           }
@@ -37,12 +37,12 @@ export default function HomeAbout() {
         {
           y: 0,
           opacity: 1,
-          duration: 1.2,
-          stagger: 0.15,
+          duration: 1,
+          stagger: 0.1,
           ease: "power3.out",
           scrollTrigger: {
             trigger: containerRef.current,
-            start: "top 60%",
+            start: "top 80%",
           }
         }
       );

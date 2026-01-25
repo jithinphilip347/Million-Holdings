@@ -120,18 +120,18 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="relative z-20 w-full px-4 md:px-6 flex flex-col items-center text-center">
+      <div className="relative z-20 container mx-auto px-6 flex flex-col items-center md:items-start text-center md:text-left pt-24 md:pt-40">
         <div ref={textRef} className="max-w-4xl text-white">
-          <span className="inline-block py-1 px-3 border border-[#fff] text-[#fff] text-xs md:text-sm font-semibold mb-4 md:mb-6 tracking-wide uppercase">
+          <span className="inline-block py-1 px-3 border border-white text-white text-xs md:text-sm font-semibold mb-4 md:mb-6 tracking-wide uppercase">
             Recruitment Experts
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 md:mb-6">
             Connecting <span className="">Talent</span> with <span className="text-[#f01c27]">Opportunity.</span>
           </h1>
-          <p className="text-base md:text-xl text-gray-300 mb-8 md:mb-10 max-w-xl md:max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base md:text-xl text-gray-300 mb-8 md:mb-10 max-w-xl md:max-w-2xl mx-auto md:mx-0 leading-relaxed">
             Million holdings with million opportunities
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
             <Link
               href="/contain"
               className="w-full sm:w-auto px-6 py-3 md:px-8 md:py-4 bg-[#f01c27] text-white font-medium hover:bg-[#d0151f] transition-all duration-300 shadow-lg rounded-none uppercase tracking-wide text-sm md:text-base"

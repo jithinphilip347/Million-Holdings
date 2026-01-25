@@ -1,6 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
-
 
 :root {
   --primaryColor: #874429;
@@ -65,12 +63,21 @@ body {
 }
 
 /* Typography Defaults */
-a, button, input, textarea, select {
+a,
+button,
+input,
+textarea,
+select {
   font-family: inherit;
   -webkit-tap-highlight-color: transparent;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-secondary, sans-serif);
   font-weight: bold;
 }
@@ -82,7 +89,7 @@ input::-webkit-inner-spin-button {
 }
 
 textarea {
-  resize: none; 
+  resize: none;
 }
 
 /* Selection */
@@ -111,5 +118,3 @@ textarea {
 video::-internal-media-controls-overlay-cast-button {
   display: none;
 }
-
-

@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
+import { FaWhatsapp } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -175,24 +176,29 @@ export default function ComingSoon() {
 
           {/* WhatsApp Button */}
           <a 
-            href="https://wa.me/1234567890" 
+            href="https://wa.me/+919567439402" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-3 px-6 py-3 border border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-300 uppercase tracking-widest text-xs font-bold rounded-sm group"
+            className="flex items-center justify-center gap-3 px-6 py-3 border border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-300 uppercase tracking-widest text-xs font-bold rounded-sm group w-fit mx-auto"
           >
             {/* WhatsApp Icon */}
-            <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.592 2.654-.698c1.005.572 1.943.832 3.209.832 3.182 0 5.768-2.586 5.768-5.767s-2.586-5.767-5.767-5.767zm6.521 1.8h-.004a8.67 8.67 0 0 0-5.87-2.6c-4.785 0-8.674 3.886-8.678 8.667a8.6 8.6 0 0 0 1.282 4.41l-1.396 5.1 5.215-1.368a8.64 8.64 0 0 0 4.153 1.054h.004c4.786 0 8.675-3.886 8.679-8.667a8.65 8.65 0 0 0-3.385-6.596z"/>
-            </svg>
+            {/* WhatsApp Icon */}
+            <FaWhatsapp className="w-5 h-5" />
             Chat on WhatsApp
           </a>
 
-          <footer className="mt-20 pt-8 border-t border-white/5 w-full flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 uppercase tracking-widest gap-4">
+          <footer className="mt-20 pt-8 border-t border-white/5 w-full flex flex-col md:flex-row justify-between items-center text-xs text-white uppercase tracking-widest gap-4">
              <span>&copy; 2026 Million Holdings International.</span>
              <div className="flex gap-6">
-                <a href="#" className="hover:text-[#f01c27] transition-colors">LinkedIn</a>
-                <a href="#" className="hover:text-[#f01c27] transition-colors">Twitter</a>
+                <a href="https://www.facebook.com/share/1AkiesA2RN/" target="_blank" rel="noopener noreferrer" className="hover:text-[#f01c27] transition-colors">Facebook</a>
+                <a href="https://www.instagram.com/millionholdingsinternational?igsh=OWYwNzVvcW9rM2dh&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-[#f01c27] transition-colors">Instagram</a>
              </div>
+
+             <div className="flex items-center gap-2">
+                <span className="text-[10px]">Designed by</span>
+                <img src="/design-logo.png" alt="Agency Logo" className="h-8 w-auto opacity-70 hover:opacity-100 transition-opacity duration-300" />
+             </div>
+             
           </footer>
         </div>
       </section>

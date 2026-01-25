@@ -107,7 +107,7 @@ export default function ComingSoon() {
              <img src="/logo-white.png" alt="Million Holdings Logo" className="h-20 md:h-28 w-auto object-contain" />
           </div>
 
-          <a href="#" className="text-sm uppercase tracking-[0.15em] hover:text-[#f01c27] transition-colors duration-300 font-medium w-24 text-center">Contact</a>
+          {/* <a href="#" className="text-sm uppercase tracking-[0.15em] hover:text-[#f01c27] transition-colors duration-300 font-medium w-24 text-center">Contact</a> */}
       </header>
 
       {/* Hero Section */}
@@ -161,7 +161,7 @@ export default function ComingSoon() {
           </h2>
           <p className="text-gray-500 mb-10 text-sm tracking-wide">Be the first to know when we launch.</p>
           
-          <form className="w-full flex flex-col md:flex-row gap-4 mb-12" onSubmit={(e) => e.preventDefault()}>
+          {/* <form className="w-full flex flex-col md:flex-row gap-4 mb-12" onSubmit={(e) => e.preventDefault()}>
             <input 
                 type="email" 
                 placeholder="Email Address" 
@@ -172,14 +172,14 @@ export default function ComingSoon() {
             <button type="submit" className="px-8 py-3 bg-[#f01c27] text-white font-semibold uppercase tracking-widest text-xs hover:bg-white hover:text-black transition-colors duration-300">
                 Subscribe
             </button>
-          </form>
+          </form> */}
 
           {/* WhatsApp Button */}
           <a 
             href="https://wa.me/+919567439402" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 px-6 py-3 border border-[#25D366] text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-300 uppercase tracking-widest text-xs font-bold rounded-sm group w-fit mx-auto"
+            className="flex items-center justify-center gap-3 px-6 py-3 border border-white text-white hover:border-[#f01c27] hover:text-[#f01c27] hover:bg-transparent focus:border-[#f01c27] focus:outline-none transition-all duration-300 uppercase tracking-widest text-xs font-bold rounded-sm group w-fit mx-auto"
           >
             {/* WhatsApp Icon */}
             {/* WhatsApp Icon */}

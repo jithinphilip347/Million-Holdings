@@ -3,8 +3,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import Cursor from "@/components/Cursor";
 import Preloader from "@/components/Preloader";
-
-
+import GlobalGrid from "@/components/GlobalGrid";
 
 const objectSans = localFont({
   src: "../assets/fonts/object-sans/Object-Sans-Regular.otf",
@@ -26,6 +25,7 @@ export default function RootLayout({ children }) {
       <body className={objectSans.className}>
         <Preloader />
         <Cursor />
+        <GlobalGrid />
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>

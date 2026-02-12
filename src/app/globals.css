@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+:root {
+  --primaryColor: #874429;
+  --secondaryColor: #f2b907;
+  --textColor: #333;
+  --backgroundColor: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 130px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #757575;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primaryColor);
+}
+
+/* Container */
+.container {
+  width: calc(100% - 200px);
+  margin: 0 auto;
+}
+
+@media (max-width: 1800px) {
+  .container {
+    width: calc(100% - 100px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: calc(100% - 32px);
+  }
+}
+
+/* Typography Defaults */
+a,
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary, sans-serif);
+  font-weight: bold;
+}
+
+/* Input/Form resets */
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Selection */
+::selection {
+  color: #ffffff;
+  background: var(--primaryColor);
+}
+
+/* Helper Classes */
+.shimmer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 105;
+  background: rgba(0, 0, 0, 0.486);
+  display: none;
+}
+
+:is(.swiper-button-prev, .swiper-button-next) svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+video::-internal-media-controls-overlay-cast-button {
+  display: none;
+}

@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body className={objectSans.className}>
         <Preloader />
         <Cursor />
-        <GlobalGrid />
+        {/* <GlobalGrid /> */}
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>

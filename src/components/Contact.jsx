@@ -192,8 +192,3 @@ export default function RecruitmentPage() {
     </div>
   );
 }
-<img
-  src="/images/map.png"
-  alt="Map"
-  className="w-full h-60 md:h-[400px] object-cover"
-/>

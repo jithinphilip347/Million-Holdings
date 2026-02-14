@@ -1,194 +1,144 @@
-"use client";
-import React from "react";
 
-export default function RecruitmentPage() {
+
+import React from 'react'
+
+function contact() {
   return (
-    <div className="bg-black text-white min-h-screen flex flex-col">
+       <div className="bg-black text-white min-h-screen px-6 md:px-20 py-16">
 
-      <nav className="flex items-center justify-between px-6 md:px-12 py-5 border-b border-gray-800">
+   
+      <div className="grid md:grid-cols-2 gap-16">
 
-       
-        <div className="flex items-center gap-8">
-
-         {/* need to add logo */}
-          <div className="flex items-center gap-2">
-            <img
-              src="/logo.png"   
-              alt="Legally Logo"
-              className="w-8 h-8 object-contain"
-            />
-            <h1 className="text-xl font-semibold">
-              Legally
-            </h1>
-          </div>
-
-          <ul className="hidden md:flex gap-6 text-gray-300 text-sm">
-            <li className="hover:text-red-500 cursor-pointer">Services</li>
-            <li className="hover:text-red-500 cursor-pointer">Contact</li>
-            <li className="hover:text-red-500 cursor-pointer">About</li>
-            <li className="hover:text-red-500 cursor-pointer">Careers</li>
-          </ul>
-        </div>
-
-        <button className="bg-red-600 px-5 py-2 rounded hover:bg-red-700 transition text-sm">
-          Sign Up
-        </button>
-      </nav>
-
-      <section className="grid md:grid-cols-2 gap-12 px-6 md:px-12 py-16 md:py-24">
-
+   
         <div>
-          <p className="text-gray-400 uppercase text-xs mb-4">
+          <p className="text-red-600 uppercase tracking-widest text-sm mb-4">
             Start With Us
           </p>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-            We Provide Global
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-8">
+            Straightforward legal
             <br />
-            <span className="text-red-600">Recruitment</span>
+            services with no hidden
             <br />
-            <span className="text-red-600">Excellence</span>
-          </h2>
+            surprises
+          </h1>
 
-          <p className="text-gray-400 mt-6 text-sm md:text-base max-w-md">
-            At Million Holdings International, we bridge the gap between
-            exceptional talent and global enterprises. Our rigorous
-            selection process ensures the perfect fit.
-          </p>
-
-          <div className="mt-8 text-gray-400 text-sm">
-            <p>Contact Info</p>
-            <p className="mt-2">📞 +90021121323</p>
+          <div className="mt-10">
+            <p className="text-gray-400 text-sm mb-2">Contact Info</p>
+            <p className="text-gray-300">Legally: +90 021 121323</p>
           </div>
         </div>
-        <div className="bg-gray-900 p-6 md:p-8 rounded-xl shadow-lg">
-          <form className="flex flex-col gap-4">
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <input
-                type="text"
-                placeholder="First Name"
-                className="bg-black border border-gray-700 p-3 rounded focus:outline-none focus:border-red-600 text-sm"
-              />
-              <input
-                type="text"
-                placeholder="Last Name"
-                className="bg-black border border-gray-700 p-3 rounded focus:outline-none focus:border-red-600 text-sm"
-              />
-            </div>
+   
+        <div className="bg-zinc-900 p-8 rounded-lg">
 
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="bg-black border border-gray-700 p-3 rounded focus:outline-none focus:border-red-600 text-sm"
-            />
-
+          <div className="grid md:grid-cols-2 gap-4 mb-4">
             <input
               type="text"
-              placeholder="Phone Number"
-              className="bg-black border border-gray-700 p-3 rounded focus:outline-none focus:border-red-600 text-sm"
+              placeholder="First Name"
+              className="bg-black border border-zinc-700 p-3 text-white focus:outline-none focus:border-red-600"
             />
+            <input
+              type="text"
+              placeholder="Last Name"
+              className="bg-black border border-zinc-700 p-3 text-white focus:outline-none focus:border-red-600"
+            />
+          </div>
 
-            <textarea
-              rows="4"
-              placeholder="Describe your case..."
-              className="bg-black border border-gray-700 p-3 rounded focus:outline-none focus:border-red-600 text-sm"
-            ></textarea>
+          <input
+            type="email"
+            placeholder="Email Address"
+            className="w-full bg-black border border-zinc-700 p-3 mb-4 text-white focus:outline-none focus:border-red-600"
+          />
 
-            <button
-              type="submit"
-              className="bg-red-600 py-3 rounded font-semibold hover:bg-red-700 transition text-sm"
-            >
-              Submit
-            </button>
+          <input
+            type="text"
+            placeholder="Phone Number"
+            className="w-full bg-black border border-zinc-700 p-3 mb-4 text-white focus:outline-none focus:border-red-600"
+          />
 
-          </form>
+          <textarea
+            placeholder="Describe your case..."
+            rows="4"
+            className="w-full bg-black border border-zinc-700 p-3 mb-6 text-white focus:outline-none focus:border-red-600"
+          ></textarea>
+
+          <button className="w-full bg-red-600 py-3 font-semibold hover:bg-red-700 transition">
+            Submit
+          </button>
+
         </div>
-      </section>
+      </div>
 
-      <section className="px-6 md:px-12 py-16 border-t border-gray-800">
-        <h3 className="text-2xl md:text-3xl font-bold mb-10">
-          Our Convenient Office Locations Nationwide
-        </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-          <div className="bg-gray-900 p-6 rounded-lg">
-            <h4 className="text-red-600 font-semibold mb-2">Office 1</h4>
+     
+      <div className="mt-24">
+
+        <p className="text-red-600 uppercase tracking-widest text-sm mb-4">
+          Our Office Sites
+        </p>
+
+        <h2 className="text-3xl md:text-5xl font-bold mb-10">
+          Our Convenient Office
+          <br />
+          Locations Nationwide
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-6">
+
+          <div className="bg-zinc-900 p-6 rounded-lg">
+            <h3 className="text-lg font-semibold mb-3">OFFICE 1</h3>
             <p className="text-gray-400 text-sm">
-              New York, NY <br />
-              123 Recruitment Street
+              New York City, NY <br />
+              111 Legal Avenue, Suite 456 <br />
+              New York, NY 10001
             </p>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg">
-            <h4 className="text-red-600 font-semibold mb-2">Office 2</h4>
+          <div className="bg-zinc-900 p-6 rounded-lg">
+            <h3 className="text-lg font-semibold mb-3">OFFICE 2</h3>
             <p className="text-gray-400 text-sm">
               Los Angeles, CA <br />
-              456 Talent Avenue
+              789 Justice Blvd, Floor 3 <br />
+              Los Angeles, CA 90001
             </p>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg">
-            <h4 className="text-red-600 font-semibold mb-2">Office 3</h4>
+          <div className="bg-zinc-900 p-6 rounded-lg">
+            <h3 className="text-lg font-semibold mb-3">OFFICE 3</h3>
             <p className="text-gray-400 text-sm">
               Chicago, IL <br />
-              789 Hiring Boulevard
-            </p>
-          </div>
-        </div>
-
-        {/* need to add map image */}
-        <div className="rounded-xl overflow-hidden border border-gray-800">
-          <img
-           src="/images/map.png"
-
-            alt="Map"
-            className="w-full h-60 md:h-[400px] object-cover"
-          />
-        </div>
-      </section>
-
-      <footer className="bg-black border-t border-gray-800 px-6 md:px-12 py-12 mt-auto">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-
-          <div>
-            <div className="flex items-center gap-2">
-              
-              <h2 className="text-lg font-semibold">Legally</h2>
-            </div>
-            <p className="text-gray-500 mt-4 text-sm">
-              We connect talent with opportunity worldwide.
+              456 Law Street, Suite 101 <br />
+              Chicago, IL 60601
             </p>
           </div>
 
-          <div>
-            <h4 className="font-semibold mb-4 text-red-600">Contact</h4>
-            <p className="text-gray-400 text-sm">support@legally.com</p>
-            <p className="text-gray-400 text-sm">+90021121323</p>
-          </div>
+        </div>
+      </div>
 
-          <div>
-            <h4 className="font-semibold mb-4 text-red-600">Menu</h4>
-            <ul className="text-gray-400 text-sm space-y-2">
-              <li>Services</li>
-              <li>About</li>
-              <li>Careers</li>
-            </ul>
-          </div>
 
-          <div>
-            <button className="bg-red-600 px-6 py-3 rounded hover:bg-red-700 transition w-full md:w-auto">
-              Free Consultation
-            </button>
-          </div>
+     
+      <div className="mt-16">
+
+        <div className="w-full aspect-[16/9] rounded-lg overflow-hidden border border-zinc-800">
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.994234746923!2d-73.996864684593!3d40.73061007932861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af18c3b0fd%3A0x8f0a9e4a8c3e1a!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000"
+            className="w-full h-full"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
 
         </div>
 
-        <div className="text-gray-600 text-xs mt-10 border-t border-gray-800 pt-6">
-          © 2026 Legally. All rights reserved.
-        </div>
-      </footer>
+      </div>
 
     </div>
-  );
+  )
+  
 }
+
+export default contact
+
+
